@@ -7,7 +7,6 @@ from dotenv import load_dotenv
 load_dotenv()
 API_KEY = os.getenv("API_KEY")
 
-# choose from our 50+ models here: https://docs.together.ai/docs/inference-models
 chat = ChatTogether(
     together_api_key=API_KEY,
     model="meta-llama/Llama-3-70b-chat-hf",
